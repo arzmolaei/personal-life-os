@@ -1,0 +1,78 @@
+name: Feature / Engineering Task
+description: Define a scoped, testable product or engineering change
+title: "[Feature] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before implementation, read `AGENTS.md`, `PROJECT_STATE.md`, relevant specs, ADRs, and tests.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user/system problem exists? Do not start with a solution.
+      placeholder: Describe the observed need and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should be true when this is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope
+      description: Exact behaviors/areas this issue owns.
+    validations:
+      required: true
+  - type: textarea
+    id: outscope
+    attributes:
+      label: Explicitly out of scope
+      description: Related work that must not creep into this issue.
+  - type: textarea
+    id: invariants
+    attributes:
+      label: Domain rules / invariants
+      description: Financial, planning, security, data-integrity, or architectural rules that constrain the solution.
+  - type: textarea
+    id: interfaces
+    attributes:
+      label: Interfaces / dependencies
+      description: Existing types/modules/tasks this work consumes or produces.
+  - type: textarea
+    id: edgecases
+    attributes:
+      label: Edge cases / failure modes
+      description: List known risky/ambiguous inputs and expected behavior.
+  - type: textarea
+    id: tests
+    attributes:
+      label: Acceptance tests / verification
+      description: What exact tests or observable checks prove completion?
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Security / privacy impact
+      description: Permissions, sensitive data, logs, exports, network, credentials, or none.
+  - type: textarea
+    id: migration
+    attributes:
+      label: Data / migration / rollback impact
+      description: Schema/data changes and recovery expectations, or none.
+  - type: input
+    id: baseline
+    attributes:
+      label: Baseline commit SHA
+      description: Required for parallel-agent experiments; optional otherwise.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Links to specs, ADRs, screenshots, competing approaches, or research.
