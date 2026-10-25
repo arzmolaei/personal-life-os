@@ -1,0 +1,44 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing / credentials
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+secrets.properties
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Local agent scratch/worktrees
+.superpowers/
+.agent-work/
+
+# Generated reports that are not source
+reports/
+
+# User/private datasets
+private-data/
+user-data/
+backups/

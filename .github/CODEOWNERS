@@ -1,0 +1,12 @@
+# Default owner
+* @arzmolaei
+
+# Architecture and agent governance
+/AGENTS.md @arzmolaei
+/PROJECT_STATE.md @arzmolaei
+/docs/adr/ @arzmolaei
+/docs/ARCHITECTURE.md @arzmolaei
+/docs/SECURITY_AND_PRIVACY.md @arzmolaei
+
+# GitHub automation
+/.github/ @arzmolaei
