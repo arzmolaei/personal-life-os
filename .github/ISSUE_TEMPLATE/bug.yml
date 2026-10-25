@@ -1,0 +1,69 @@
+name: Bug / Data Integrity Issue
+description: Report reproducible incorrect behavior, crash, corruption risk, or regression
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For financial/data-integrity bugs, correctness and preservation of existing user data take priority over quick UI patches.
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Minimal deterministic steps using synthetic/redacted data.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / severity
+      description: Does this affect money, history, security, data loss, only UI, or a narrow edge case?
+    validations:
+      required: true
+  - type: textarea
+    id: invariant
+    attributes:
+      label: Violated invariant / spec
+      description: Link the relevant spec/test/ADR if known.
+  - type: textarea
+    id: regression
+    attributes:
+      label: Regression test required
+      description: Describe the failing test that should reproduce this before the fix.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data / migration / recovery impact
+      description: Could existing data already be wrong? Is repair/reconciliation/migration needed?
+  - type: textarea
+    id: security
+    attributes:
+      label: Security / privacy impact
+      description: Any secret/private data exposure or permission issue?
+  - type: input
+    id: version
+    attributes:
+      label: App/build/commit version
+      description: Version or exact commit SHA where observed, if known.
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Privacy-safe diagnostics
+      description: Error codes/log metadata only. Do not paste real banking messages, credentials, backups, or private notes.
