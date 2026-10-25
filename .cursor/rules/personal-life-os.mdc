@@ -1,0 +1,15 @@
+---
+description: Personal Life OS mandatory repository workflow
+alwaysApply: true
+---
+
+Before modifying this repository:
+
+1. Read `/AGENTS.md` completely.
+2. Read `/PROJECT_STATE.md`.
+3. Read `/docs/PRODUCT.md` and `/docs/ARCHITECTURE.md`.
+4. Read relevant ADRs/specs/plans and inspect existing tests/history.
+
+`AGENTS.md` is the canonical operating contract. Do not create an independent conflicting workflow in Cursor.
+
+Use small independently testable changes, fresh verification, semantic commits, and durable handoff state as required by `AGENTS.md`.
